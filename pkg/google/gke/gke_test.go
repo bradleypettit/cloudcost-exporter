@@ -577,3 +577,29 @@ func TestNodeStore_Populate_ConcurrencyLimit(t *testing.T) {
 	assert.LessOrEqual(t, fakeClient.peakConcurrency, nodePopulateConcurrencyLimit,
 		"peak goroutine concurrency must not exceed nodePopulateConcurrencyLimit")
 }
+
+func TestDiskStore_Populate_ConcurrencyLimit(t *testing.T) {
+	// 8 zones → up to 8 goroutines for ListDisks during DiskStore.Populate.
+	// diskPopulateConcurrencyLimit caps the total.
+	const numZones = 8
+
+	zones := make([]*computev1.Zone, numZones)
+	for i := range numZones {
+		zones[i] = &computev1.Zone{Name: fmt.Sprintf("us-central1-%c", 'a'+i)}
+	}
+
+	fakeClient := &concurrentGCPClient{zones: zones}
+
+	ds := &DiskStore{
+		logger:            logger,
+		gcpClient:         fakeClient,
+		projects:          []string{"proj1"},
+		disks:             make(map[string][]*Disk),
+		initialPopulation: make(chan struct{}),
+	}
+
+	ds.Populate(t.Context())
+
+	assert.LessOrEqual(t, fakeClient.peakConcurrency, diskPopulateConcurrencyLimit,
+		"peak goroutine concurrency must not exceed diskPopulateConcurrencyLimit")
+}
