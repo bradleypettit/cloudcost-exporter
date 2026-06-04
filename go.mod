@@ -16,7 +16,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/credentials v1.19.19
 	github.com/aws/aws-sdk-go-v2/service/costexplorer v1.63.10
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.304.2
-	github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2 v1.54.14
+	github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2 v1.55.0
 	github.com/aws/aws-sdk-go-v2/service/pricing v1.42.2
 	github.com/aws/aws-sdk-go-v2/service/rds v1.118.4
 	github.com/aws/aws-sdk-go-v2/service/sts v1.42.3

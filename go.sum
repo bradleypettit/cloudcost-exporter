@@ -84,8 +84,8 @@ github.com/aws/aws-sdk-go-v2/service/costexplorer v1.63.10 h1:qfocR9B2YCHsYUBhMx
 github.com/aws/aws-sdk-go-v2/service/costexplorer v1.63.10/go.mod h1:HXoUaVgUrJ0tUcx7kwIjtN7rNoRsceWcBSCVmzGcaQU=
 github.com/aws/aws-sdk-go-v2/service/ec2 v1.304.2 h1:puQq1j5XHH/zaeAJS8ngKUaBAlg70VStCvhwH69Vr4o=
 github.com/aws/aws-sdk-go-v2/service/ec2 v1.304.2/go.mod h1:BmEhUktSbAPK6oedmAp9w/j4Yaa2WqTmNTQ4ovydhX4=
-github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2 v1.54.14 h1:OrWZhXbvIuUUoPP/iKJTk0oK1bQIMP+rDeX+WovV3I4=
-github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2 v1.54.14/go.mod h1:z4WCOQa6Hvgz9es0erR40tJQe1hDHRLPeDlhoUQrGAg=
+github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2 v1.55.0 h1:ckU8LMIYuw1SD4w1f73wDqzFOZk+vZNE2SB3TrrNqqw=
+github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2 v1.55.0/go.mod h1:z4WCOQa6Hvgz9es0erR40tJQe1hDHRLPeDlhoUQrGAg=
 github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.10 h1:d5/908OJ4bXg8lyjeMPvXetEKqoDoLi5Owy1zNue3yg=
 github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.10/go.mod h1:a57l7Hwh+FWI+we50g5NPJHYUKeJKfXbc4w8SyXu8Ig=
 github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.13.25 h1:dD3dhHNglpd98gs72my22Ndqi1hqQGllFFg1F+twfxg=
